@@ -1,0 +1,206 @@
+.title1 {
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 70px;
+  font-family: $lyonText;
+}
+
+.title2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  font-family: $lyonText;
+}
+
+.title3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  &.sm {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+.paragraph {
+  &.ex {
+    font-size: 30px;
+    line-height: 45px;
+    font-family: $lyonText;
+  }
+}
+.main {
+  overflow: hidden;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s ease;
+  background-color: transparent;
+  color: $primary;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: $mainFont;
+  letter-spacing: 2px;
+  padding: 10px;
+  border: 1px solid $primary;
+  &:hover {
+    opacity: 1;
+    background-color: $primary;
+    color: $white;
+  }
+}
+.input {
+  position: relative;
+  width: 100%;
+  &.big {
+    background-color: transparent;
+    input {
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        color: $black;
+        padding: 10px 0 4px;
+        border: unset;
+        border-bottom: 1px solid #979797;
+        &::placeholder {
+            color: $black;
+        }
+    }
+  }
+  label {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-family: $mainFont;
+    color: $black;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  input {
+    background-color: $white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: $mainFont;
+    color: $gray-dark;
+    padding: 14px 16px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #d2d2d2;
+    &::placeholder {
+      color: $gray-dark;
+    }
+  }
+}
+.check {
+    display: flex;
+    align-items: center;
+    &__box {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        position: relative;
+        margin-right: 18px;
+        overflow: hidden;
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $gray;
+            transition: .3s ease;
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                content: "";
+                width: 12px;
+                height: 6px;
+                border-left: 2px solid $white;
+                border-bottom: 2px solid $white;
+                transform: translate(-50%, -70%) rotate(-45deg);
+                transition: .3s ease;
+                opacity: 0;
+            }
+        }
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 3;
+            cursor: pointer;
+            &:checked {
+                & ~ span {
+                    background-color: $green;
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    b {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: $mainFont;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $black;
+        display: block;
+        width: calc(100% - 48px);
+    }
+}
+.textArea {
+  &.big {
+    textarea {
+      background-color: transparent;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 700;
+      color: $black;
+      border: unset;
+      padding: 12px 0 0;
+      min-height: unset;
+    }
+  }
+    label {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        font-family: $mainFont;
+        color: $black;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+      textarea {
+        resize: unset;
+        padding: 14px 16px;
+        background-color: $white;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #d2d2d2;
+        font-family: $ibmPlex;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1E1E1E;
+        min-height: 128px;
+      }
+}

@@ -1,0 +1,175 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include intro-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  .title1 {
+    font-size: 60px;
+    line-height: 65px;
+  }
+  @include intro-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include intro-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  .title1 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  .title2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .paragraph {
+    &.ex {
+      font-size: 27px;
+      line-height: 37px;
+    }
+  }
+  @include intro-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .title1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .title2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .paragraph {
+    &.ex {
+      font-size: 23px;
+      line-height: 30px;
+    }
+  }
+  @include intro-lg-xlg;
+}
+// 930px
+@include md-lg {
+  @include intro-md-lg;
+}
+// 840px
+@include md-lg-extra {
+  @include intro-md-lg-extra;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  .title1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .title2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .paragraph {
+    &.ex {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  @include intro-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include intro-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  .title1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .title2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .input {
+    &.big {
+      input {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    label {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    input {
+      padding: 10px 12px;
+    }
+  }
+  .textArea {
+    &.big {
+      textarea {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    label {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    textarea {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px 12px;
+    }
+  }
+  .check {
+    &__box {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      span {
+        &::before {
+          width: 11px;
+          height: 6px;
+        }
+      }
+    }
+    b {
+      font-size: 12px;
+      line-height: 16px;
+      width: calc(100% - 35px);
+      letter-spacing: 1px;
+    }
+  }
+  @include intro-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  .title1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .paragraph {
+    &.ex {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  @include intro-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include intro-xxxsm-xxsm;
+}
